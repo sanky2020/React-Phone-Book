@@ -1,3 +1,5 @@
+### Upon adding user details, it gets sorted as per the user's Last name and displayed accordingly in the table. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
