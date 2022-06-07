@@ -3,9 +3,9 @@ import React, {useState} from 'react'
 function PhoneBookForm(props) {
     const initContact = {
         id: null,
-        userFirstname: "Enter First Name..",
-        userLastname: "Enter Last Name..",
-        userPhone: "Enter Phone number..",
+        userFirstname: "",
+        userLastname: "",
+        userPhone: "",
       };
     
       const [userState, setUserState] = useState(initContact);
@@ -28,15 +28,15 @@ function PhoneBookForm(props) {
         <form onSubmit={handleSubmit} className='container'>
           <label>First name:</label>
           <br />
-          <input className="inputs userFirstname" name="userFirstname" type="text" value={userState.userFirstname} onChange={handleUserChange} />
+          <input className="inputs userFirstname" name="userFirstname" type="text" placeholder='Enter First Name' value={userState.userFirstname} onChange={handleUserChange} />
           <br />
           <label>Last name:</label>
           <br />
-          <input className="inputs userLastname" name="userLastname" type="text" value={userState.userLastname} onChange={handleUserChange} />
+          <input className="inputs userLastname" name="userLastname" type="text" placeholder='Enter Last Name' value={userState.userLastname} onChange={handleUserChange} />
           <br />
           <label>Phone:</label>
           <br />
-          <input className="inputs userPhone" name="userPhone" type="text" value={userState.userPhone} onChange={handleUserChange} />
+          <input className="inputs userPhone" name="userPhone" type="text" placeholder='Enter Phone number' value={userState.userPhone} onChange={handleUserChange} />
           <br />
           <input className="submitBtn submitButton" type="submit" value="Add User" />
         </form>
